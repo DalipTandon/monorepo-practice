@@ -40,7 +40,7 @@ export default function Home() {
         <TextInput onchange={(e)=>setRoute(e.target.value)} placeholder="Please enter room ID..."></TextInput>
         <button
         onClick={()=>{
-          router.push(route)
+          router.push("/chat/"+route)
         }}
           style={{
             padding: "12px",
